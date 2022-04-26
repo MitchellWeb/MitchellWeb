@@ -88,6 +88,7 @@ else
         <h1>Welcome Back:<?php echo $UserName;?></h1>
         <h1>Admin Options</h1>
         <p><a href="../Unit 12/inputEvent.php">Input Event</a></p>
+        <p><a href="logout.php">Logout</a></p>
         
         <?php 
         
