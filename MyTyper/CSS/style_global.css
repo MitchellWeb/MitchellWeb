@@ -1,0 +1,123 @@
+/*This is the css stylesheet for site wide repeated content*/
+* {
+  font-family: 'Nova Mono', monospace;
+}
+
+nav {
+  width: 100%;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+}
+
+.cart-img {
+  position: absolute;
+  z-index: 0;
+  width: 75px;
+  height: 75px;
+}
+
+.counter-num {
+  position: absolute;
+  z-index: 1;
+  width: 75px;
+  height: 75px;
+  top: 100px;
+  left: 42px;
+  font-size: 30px;
+}
+
+.cart-cont {
+  width: 75px;
+  height: 75px;
+}
+
+.bg-light {
+  background: -webkit-gradient(linear, left top, right top, from(#9a97d2), color-stop(54%, #cd85d9), to(#00d4ff)) !important;
+  background: linear-gradient(90deg, #9a97d2 0%, #cd85d9 54%, #00d4ff 100%) !important;
+}
+
+div a.navbar-brand {
+  font-size: 40px;
+}
+
+header {
+  margin: 100px 0px 40px 0px;
+}
+
+body {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+img.cart-icon {
+  position: fixed;
+  top: 0px;
+  z-index: 0;
+  width: 72px;
+  height: 72px;
+}
+
+p.cart-count {
+  position: fixed;
+  z-index: 1;
+  width: 72px;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -6px;
+  padding: 10px 10px 0 0;
+  font-size: 35px;
+}
+
+footer {
+  max-height: 100px;
+  height: 100px;
+  background: -webkit-gradient(linear, right top, left top, from(#9a97d2), color-stop(54%, #cd85d9), to(#00d4ff));
+  background: linear-gradient(270deg, #9a97d2 0%, #cd85d9 54%, #00d4ff 100%);
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 400px) {
+  footer {
+    max-height: 50px;
+  }
+  header > div > a > img {
+    max-width: 90%;
+  }
+  header > div > a {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div a.navbar-brand {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style_global.css.map */

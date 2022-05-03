@@ -1,0 +1,137 @@
+/*This is the css stylesheet for inedx.html*/
+
+main.row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    div {
+        img {
+            max-width: 100%;
+        }
+    }
+    div.text {
+        padding: 20px;
+    }
+}
+
+main {
+    padding-top: 100px; //puts space between the nav bar and the 'main' element
+}
+
+.product-image {
+    padding: 1px 1px 5px 5px;
+    background: linear-gradient(90deg, rgba(154, 151, 210, 1) 0%, rgba(205, 133, 217, 1) 54%, rgba(0, 212, 255, 1) 100%);
+}
+
+main {
+    div#content-1 {
+        order: 0;
+        ;
+    }
+}
+
+main {
+    div#content-2 {
+        order: 1;
+        h1 {
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+}
+
+main {
+    div#content-3 {
+        order: 2;
+        h1 {
+            font-size: 40px;
+            text-decoration: underline;
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+}
+
+main {
+    div#content-4 {
+        order: 3;
+    }
+}
+
+main {
+    div {
+        form {
+            button.view-product-button {
+                border-radius: 50px;
+                background-color: orange;
+            }
+            button.view-product-button:hover {
+                border-radius: 50px;
+                background-color: rgb(255, 115, 0);
+            }
+        }
+    }
+}
+
+main {
+    div.product-block {
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 0px;
+        max-width: 300px;
+        h1 {
+            max-width: 300px;
+        }
+    }
+}
+
+section.product-section {
+    width: 100%;
+    height: fit-content;
+    order: 99;
+}
+
+@media(max-width:992px) {
+    main {
+        div#content-1 {
+            order: 0;
+        }
+    }
+    main {
+        div#content-2 {
+            order: 1;
+        }
+    }
+    main {
+        div#content-3 {
+            order: 3;
+        }
+    }
+    main {
+        div#content-4 {
+            order: 2;
+        }
+    }
+}
+
+@media(max-width:767px) {
+    main {
+        section.product-section {
+            justify-content: center !important;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    header {
+        margin: 120px 0px 40px 0px !important;
+    }
+    main {
+        section.product-section {
+            justify-content: center !important;
+        }
+    }
+}

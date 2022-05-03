@@ -1,0 +1,50 @@
+div.body-container {
+    max-width: 750px;
+    width: fit-content;
+    margin: 2% auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 80px;
+    font-size: 25px;
+    border-radius: 260px 0px 260px 0px;
+    background: linear-gradient(225deg, #bf9ebf, #fb8bfb);
+    box-shadow: -10px 10px 10px #473c47, 10px -10px 10px #f0c2f0;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+body {
+    background: radial-gradient(circle, rgba(251, 110, 63, 1) 0%, rgba(252, 198, 70, 1) 100%);
+}
+
+form.form-container {
+    max-width: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 50px;
+    text-align: center;
+}
+
+form.form-container>span>input {
+    font-size: 30px;
+    width: 12ex;
+    height: 2ex;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+form.form-container>span {
+    display: flex;
+    flex-direction: inherit;
+    margin: 25% 0 25% 0;
+}
+
+#submit {
+    height: 4ex;
+}

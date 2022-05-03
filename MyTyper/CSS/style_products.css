@@ -1,0 +1,96 @@
+body {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div image {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+div.product-block {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 500px;
+  max-height: 500px;
+  margin: 15px 15px;
+  max-width: 300px;
+  min-height: 300px;
+}
+
+div.product-block h1 {
+  max-width: inherit;
+  max-height: 100px;
+  min-height: 100px;
+  height: 100px;
+}
+
+div.product-block h2 {
+  max-width: inherit;
+  max-height: 50px;
+  height: 50px;
+  min-height: 50px;
+}
+
+div.product-block form {
+  max-width: inherit;
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+}
+
+.product-image {
+  padding: 1px 1px 5px 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#9a97d2), color-stop(54%, #cd85d9), to(#00d4ff));
+  background: linear-gradient(90deg, #9a97d2 0%, #cd85d9 54%, #00d4ff 100%);
+}
+
+.viewCatForm {
+  background-color: #c8c8a2;
+  font-size: 40px;
+  -webkit-transform: skew(350deg);
+          transform: skew(350deg);
+  -webkit-box-shadow: -5px 5px 2px 0px #4b4b43, 5px 5px 2px 0px #4b4b43;
+          box-shadow: -5px 5px 2px 0px #4b4b43, 5px 5px 2px 0px #4b4b43;
+  margin-bottom: 10px;
+  border: none;
+  margin-top: 10px;
+}
+
+.viewCatForm:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform: skew(10deg);
+          transform: skew(10deg);
+}
+
+div form button.view-product-button {
+  border-radius: 20px 0 20px 0;
+  background-color: #e08fdc;
+  -webkit-box-shadow: -2px -2px 5px 2px #b572b1;
+          box-shadow: -2px -2px 5px 2px #b572b1;
+  padding: 5px;
+}
+
+div form button.view-product-button:hover {
+  border-radius: 20px 0 20px 0;
+  background-color: #d95ad2;
+  -webkit-box-shadow: 2px 2px 5px 2px #b346ad;
+          box-shadow: 2px 2px 5px 2px #b346ad;
+  padding: 5px;
+}
+
+main {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/*# sourceMappingURL=style_products.css.map */

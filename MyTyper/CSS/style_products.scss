@@ -1,0 +1,86 @@
+body {
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    image {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+div.product-block {
+    width: fit-content;
+    height: 500px;
+    max-height: 500px;
+    margin: 15px 15px;
+    max-width: 300px;
+    min-height: 300px;
+    h1 {
+        max-width: inherit;
+        max-height: 100px;
+        min-height: 100px;
+        height: 100px;
+    }
+    h2 {
+        max-width: inherit;
+        max-height: 50px;
+        height: 50px;
+        min-height: 50px;
+    }
+    form {
+        max-width: inherit;
+        height: 50px;
+        max-height: 50px;
+        min-height: 50px;
+    }
+}
+
+.product-image {
+    padding: 1px 1px 5px 5px;
+    background: linear-gradient(90deg, rgba(154, 151, 210, 1) 0%, rgba(205, 133, 217, 1) 54%, rgba(0, 212, 255, 1) 100%);
+}
+
+.viewCatForm {
+    background-color: #c8c8a2;
+    font-size: 40px;
+    transform: skew(350deg);
+    box-shadow: -5px 5px 2px 0px #4b4b43, 5px 5px 2px 0px #4b4b43;
+    margin-bottom: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+.viewCatForm:hover {
+    transform: scale(1.1);
+    transform: skew(10deg);
+}
+
+div {
+    form {
+        button.view-product-button {
+            border-radius: 20px 0 20px 0;
+            background-color: #e08fdc;
+            box-shadow: -2px -2px 5px 2px #b572b1;
+            padding: 5px;
+        }
+        button.view-product-button:hover {
+            border-radius: 20px 0 20px 0;
+            background-color: #d95ad2;
+            box-shadow: 2px 2px 5px 2px #b346ad;
+            padding: 5px;
+        }
+    }
+}
+
+main {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}

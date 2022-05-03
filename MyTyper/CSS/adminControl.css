@@ -1,0 +1,61 @@
+body {
+    max-width: 1200px;
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background: radial-gradient(circle, rgba(251, 110, 63, 1) 0%, rgba(252, 198, 70, 1) 100%);
+}
+
+body>div {
+    width: 40%;
+    border: solid black 4px;
+    background-color: white;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+div#productList {
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+h1 {
+    text-align: center;
+}
+
+form.add-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 25px;
+}
+
+input,
+textarea,
+select {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        display: flex;
+    }
+    body>div {
+        width: 100%;
+    }
+}

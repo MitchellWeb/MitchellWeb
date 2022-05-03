@@ -1,0 +1,124 @@
+/*This is the css stylesheet for site wide repeated content*/
+
+//SCSS/CSS properties and values for styling the navigation bar, found on each page of the site
+* {
+    font-family: 'Nova Mono', monospace;
+}
+
+nav {
+    width: 100%;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+.cart-img {
+    position: absolute;
+    z-index: 0;
+    width: 75px;
+    height: 75px;
+}
+
+.counter-num {
+    position: absolute;
+    z-index: 1;
+    width: 75px;
+    height: 75px;
+    top: 100px;
+    left: 42px;
+    font-size: 30px;
+}
+
+.cart-cont {
+    width: 75px;
+    height: 75px;
+}
+
+$nav-bg-color: linear-gradient(90deg, rgba(154, 151, 210, 1) 0%, rgba(205, 133, 217, 1) 54%, rgba(0, 212, 255, 1) 100%);
+$footer-bg-color: linear-gradient(270deg, rgba(154, 151, 210, 1) 0%, rgba(205, 133, 217, 1) 54%, rgba(0, 212, 255, 1) 100%);
+;
+.bg-light {
+    background: $nav-bg-color !important;
+}
+
+div {
+    a.navbar-brand {
+        font-size: 40px;
+    }
+}
+
+//SCSS/CSS properties and values for styling the header that contains the site logo, found on each page
+header {
+    margin: 120px 0px 40px 0px;
+}
+
+body {
+    max-height: fit-content;
+    height: fit-content;
+}
+
+.row {
+    //removes default styling values from the .row class from bootstrap
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+img.cart-icon {
+    position: fixed;
+    top: 0px;
+    z-index: 0;
+    width: 72px;
+    height: 72px;
+}
+
+p.cart-count {
+    position: fixed;
+    z-index: 1;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -6px;
+    padding: 10px 10px 0 0;
+    font-size: 35px;
+}
+
+//
+footer {
+    $footer-max-height: 100px;
+    max-height: $footer-max-height;
+    height: $footer-max-height;
+    background: $footer-bg-color;
+    margin-bottom: $footer-max-height*.1;
+    text-align: center;
+    font-size: 30px;
+}
+
+// mobile media query
+//all properties and values stated within this media query will only take effect while the viewport of the display is 400 pixels or less
+@media only screen and (max-width: 400px) {
+    //redefine variables
+    $footer-max-height: 100px;
+    footer {
+        max-height: $footer-max-height*.5; //decrease the max height of the footer by 50%
+    }
+    header>div>a>img {
+        max-width: 90%;
+    }
+    header>div>a {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    div {
+        a.navbar-brand {
+            display: none;
+        }
+    }
+}
