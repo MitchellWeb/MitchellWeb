@@ -116,17 +116,22 @@ function formToUser($email_to, $reason,$fname,$lname)
 
     <main class="container row">
     <?php
-
+$valid = true;
 if(!isset($_POST['submit']))
 {
+    $fnameRequired = "";
+    $lnameRequired = "";
+    $emailRequired = "";
+    $msgRequired = "";  
+    $returnContact = "";
     
-    
+
 ?>
         <div class="form-container">
             <form class="contact-form" action="contact.php" method="post">
 
                 <div class="d-flex flex-column">
-                    <label for="fname">First Name</label>
+                    <label for="fname">First Name <?php echo $required?></label>
                     <input type="text" name="fname">
                 </div>
 
@@ -164,8 +169,8 @@ if(!isset($_POST['submit']))
 
             </form>
         </div>
-    
         <?php
+        
 }
 else{
 $fname = $_POST['fname'];
@@ -174,11 +179,48 @@ $customerEmail = $_POST['email'];
 $Reason = $_POST['reason'];
 $msg = $_POST['message'];
 
-formToAdmin($Reason, $msg, $customerEmail);
-formToUser($customerEmail,$reason,$fname,$lname);
+if($fname == "")
+{
+    $valid = false;
+    $fnameRequired = "Missing First Name Required";
+    $returnContact = "Return To Contact Page";
+}
+if($lname == "")
+{
+    $valid = false;
+    $lnameRequired = "Missing Last Name Required";
+    $returnContact = "Return To Contact Page";
+}
+if($customerEmail == "")
+{
+    $valid = false;
+    $emailRequired = "Missing email address Required";
+    $returnContact = "Return To Contact Page";
+}
+if($msg == "")
+{
+    $valid = false;
+    $msgRequired = "Missing Message Field Required";
+    $returnContact = "Return To Contact Page";
+}
+
+if($valid)
+{
+  formToAdmin($Reason, $msg, $customerEmail);
+formToUser($customerEmail,$reason,$fname,$lname);  
+}
+
+
 }
 
         ?>
+        <div class="d-flex flex-column" style="text-align: center;">
+            <p><?php echo $fnameRequired ?></p>
+            <p><?php echo $lnameRequired ?></p>
+            <p><?php echo $emailRequired ?></p>
+            <p><?php echo $msgRequired ?></p>
+            <a href="contact.php"><p><?php echo $returnContact ?></p></a>
+        </div>
     </main>
     <footer>
         <!--Footer section, identical across all pages of this project-->
